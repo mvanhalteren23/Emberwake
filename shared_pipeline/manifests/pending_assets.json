@@ -340,7 +340,7 @@
       "alpha_channel": true,
       "category": "qte",
       "prompt_spec": "Forged bronze and ember-gold rightward chevron directional prompt emblem for a fantasy RPG combat timing cue, glowing warm core, crisp pixel-art edges",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "qte.prompt.tap",
@@ -382,7 +382,7 @@
         }
       ],
       "prompt_spec": "Concentric contracting amber timing halo ring etched with subtle arcane tick marks, four-frame closing ring sequence for fantasy RPG QTE timing feedback",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "qte.burst.perfect",
@@ -411,7 +411,7 @@
         }
       ],
       "prompt_spec": "Crisp golden-crimson radial spark flare bursting outward from center across four sequential animation frames, 16-bit fantasy RPG perfect-hit flash effect",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "fx.reaction.steam_burst",
@@ -469,7 +469,7 @@
         }
       ],
       "prompt_spec": "High-voltage azure and gold jagged chain-lightning detonation exploding from a central impact node across four frames, 16-bit fantasy RPG battle FX",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "fx.reaction.frost_shatter",
@@ -498,7 +498,7 @@
         }
       ],
       "prompt_spec": "Sharp translucent sapphire ice crystal bloom shattering into glittering frost splinters across four animation frames, 16-bit fantasy RPG battle FX",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "fx.reaction.ash_veil",
@@ -527,7 +527,7 @@
         }
       ],
       "prompt_spec": "Swirling dark soot cloud pierced by spiraling orange embers blooming outward over four animation frames, original 16-bit fantasy RPG battle FX",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "fx.dragon.finisher.cinder",
@@ -556,7 +556,7 @@
         }
       ],
       "prompt_spec": "Torrential crimson-orange draconic firestorm vortex swirling into a molten magma flare across eight sequential frames in a 4x2 grid, 16-bit fantasy RPG FX",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "fx.dragon.finisher.rime",
@@ -585,7 +585,7 @@
         }
       ],
       "prompt_spec": "Glacial cyan-white draconic breath cyclone erupting into towering crystal spires across eight sequential frames in a 4x2 grid, 16-bit fantasy RPG FX",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "fx.dragon.finisher.storm",
@@ -614,7 +614,7 @@
         }
       ],
       "prompt_spec": "Tempest-violet and bright-gold draconic thunderstrike column descending with shockwave arcs across eight sequential frames in a 4x2 grid, 16-bit fantasy RPG FX",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "fx.dragon.finisher.sovereign",
@@ -643,7 +643,7 @@
         }
       ],
       "prompt_spec": "Radiant white-gold solar crown ignition expanding into a ringed celestial flame nova across eight sequential frames in a 4x2 grid, 16-bit fantasy RPG FX",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "hud.stamina.crest",
@@ -656,7 +656,7 @@
       "alpha_channel": true,
       "category": "hud",
       "prompt_spec": "Compact 16-bit fantasy RPG HUD medallion depicting a winged boot and wind ribbon in brushed brass and emerald enamel",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "hud.waypoint.beacon",
@@ -669,7 +669,7 @@
       "alpha_channel": true,
       "category": "hud",
       "prompt_spec": "Ornamental frontier stone brazier beacon glowing with steady amber fire inside a brass compass bezel, crisp 16-bit fantasy RPG fast-travel map icon",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "hud.mount.call_horn",
@@ -682,7 +682,7 @@
       "alpha_channel": true,
       "category": "hud",
       "prompt_spec": "Carved bone and copper war-horn wrapped in leather cord on a circular slate-iron HUD badge, crisp 16-bit fantasy RPG action icon",
-      "status": "pending"
+      "status": "delivered"
     },
     {
       "asset_id": "hud.sync.emblem",
@@ -695,7 +695,7 @@
       "alpha_channel": true,
       "category": "hud",
       "prompt_spec": "Twin intertwined flame-and-ash rings around an incandescent diamond core, crisp 16-bit fantasy RPG combat Sync meter emblem",
-      "status": "pending"
+      "status": "delivered"
     }
   ]
 }
