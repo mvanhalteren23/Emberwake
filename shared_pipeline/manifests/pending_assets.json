@@ -1,0 +1,701 @@
+{
+  "manifest_version": "1.0",
+  "project": "emberwake",
+  "assets": [
+    {
+      "asset_id": "mount.ashen_drake.sheet",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/mounts/mount_ashen_drake_sheet.png",
+      "resolution": {
+        "width": 512,
+        "height": 512
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 4,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 10,
+      "loop": true,
+      "alpha_channel": true,
+      "category": "mount",
+      "animation_states": [
+        {
+          "name": "idle",
+          "row": 0,
+          "from": 0,
+          "count": 4
+        },
+        {
+          "name": "glide",
+          "row": 1,
+          "from": 0,
+          "count": 4
+        },
+        {
+          "name": "dash",
+          "row": 2,
+          "from": 0,
+          "count": 4
+        },
+        {
+          "name": "soar",
+          "row": 3,
+          "from": 0,
+          "count": 4
+        }
+      ],
+      "prompt_spec": "Winged ashen-scale sky drake mount with folded bronze saddle harness and ember-lit wing membranes, original 16-bit painterly pixel fantasy sprite sheet, four animation rows (hover idle, glide, gust dash, high soar)",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "mount.ashen_drake.icon",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/mount_ashen_drake_icon.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "mount",
+      "prompt_spec": "Ornate circular bronze and crimson crest icon featuring a winged ashen drake silhouette in profile with glowing amber eye, crisp 16-bit fantasy RPG HUD emblem",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "mount.cragstrider.sheet",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/mounts/mount_cragstrider_sheet.png",
+      "resolution": {
+        "width": 512,
+        "height": 512
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 4,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 10,
+      "loop": true,
+      "alpha_channel": true,
+      "category": "mount",
+      "animation_states": [
+        {
+          "name": "idle",
+          "row": 0,
+          "from": 0,
+          "count": 4
+        },
+        {
+          "name": "trot",
+          "row": 1,
+          "from": 0,
+          "count": 4
+        },
+        {
+          "name": "sprint",
+          "row": 2,
+          "from": 0,
+          "count": 4
+        },
+        {
+          "name": "leap",
+          "row": 3,
+          "from": 0,
+          "count": 4
+        }
+      ],
+      "prompt_spec": "Sturdy horned highland cragstrider beast mount wearing woven frontier blanket and leather bridle, original 16-bit painterly pixel fantasy sprite sheet, four animation rows (idle, trot, sprint, bound leap)",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "mount.cragstrider.icon",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/mount_cragstrider_icon.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "mount",
+      "prompt_spec": "Ornate round iron and moss-green HUD badge depicting a horned cragstrider mount head in crisp 16-bit fantasy RPG pixel illustration style",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "hazard.steam.icon",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/hazard_steam_icon.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "hazard",
+      "prompt_spec": "Compact 16-bit fantasy RPG status icon of swirling scalding white-cyan steam plumes rising from cracked ember stone inside a hammered brass rim",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "hazard.steam.fx",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/hazard_steam_fx.png",
+      "resolution": {
+        "width": 512,
+        "height": 128
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 1,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 8,
+      "loop": true,
+      "alpha_channel": true,
+      "category": "hazard",
+      "animation_states": [
+        {
+          "name": "loop",
+          "row": 0,
+          "from": 0,
+          "count": 4
+        }
+      ],
+      "prompt_spec": "Billowing ground-level scalding steam veil with rising vapor wisps and warm orange thermal glow beneath, original 16-bit fantasy RPG combat field effect sprite sheet",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "hazard.electrified.icon",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/hazard_electrified_icon.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "hazard",
+      "prompt_spec": "Compact 16-bit fantasy RPG status icon showing crackling golden-cyan lightning arcs dancing across a shallow puddle inside a dark steel ring",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "hazard.electrified.fx",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/hazard_electrified_fx.png",
+      "resolution": {
+        "width": 512,
+        "height": 128
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 1,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 12,
+      "loop": true,
+      "alpha_channel": true,
+      "category": "hazard",
+      "animation_states": [
+        {
+          "name": "loop",
+          "row": 0,
+          "from": 0,
+          "count": 4
+        }
+      ],
+      "prompt_spec": "Crackling electric puddle terrain hazard with branching cobalt and pale-gold sparks arcing across shallow water ripples, original 16-bit fantasy RPG battle FX sheet",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "hazard.frozen.icon",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/hazard_frozen_icon.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "hazard",
+      "prompt_spec": "Compact 16-bit fantasy RPG status icon showing jagged frost crystal shards emerging from pale glacier ice inside a silver-rimmed medallion",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "hazard.frozen.fx",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/hazard_frozen_fx.png",
+      "resolution": {
+        "width": 512,
+        "height": 128
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 1,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 8,
+      "loop": true,
+      "alpha_channel": true,
+      "category": "hazard",
+      "animation_states": [
+        {
+          "name": "loop",
+          "row": 0,
+          "from": 0,
+          "count": 4
+        }
+      ],
+      "prompt_spec": "Crystalline rime-ice ground hazard with glinting frost spikes and drifting cold mist flecks along the floor plane, original 16-bit fantasy RPG battle FX sheet",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "hazard.smoke.icon",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/hazard_smoke_icon.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "hazard",
+      "prompt_spec": "Compact 16-bit fantasy RPG status icon of dense charcoal ash-smoke curls with glowing red cinder flecks inside a tarnished copper frame",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "hazard.smoke.fx",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/hazard_smoke_fx.png",
+      "resolution": {
+        "width": 512,
+        "height": 128
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 1,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 8,
+      "loop": true,
+      "alpha_channel": true,
+      "category": "hazard",
+      "animation_states": [
+        {
+          "name": "loop",
+          "row": 0,
+          "from": 0,
+          "count": 4
+        }
+      ],
+      "prompt_spec": "Thick swirling soot and cinder smoke screen rolling low over the battleground with faint glowing ash embers, original 16-bit fantasy RPG battle FX sheet",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "qte.prompt.up",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/qte_prompt_up.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "qte",
+      "prompt_spec": "Forged bronze and ember-gold upward chevron directional prompt emblem for a fantasy RPG combat timing cue, glowing warm core, crisp pixel-art edges",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "qte.prompt.down",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/qte_prompt_down.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "qte",
+      "prompt_spec": "Forged bronze and ember-gold downward chevron directional prompt emblem for a fantasy RPG combat timing cue, glowing warm core, crisp pixel-art edges",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "qte.prompt.left",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/qte_prompt_left.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "qte",
+      "prompt_spec": "Forged bronze and ember-gold leftward chevron directional prompt emblem for a fantasy RPG combat timing cue, glowing warm core, crisp pixel-art edges",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "qte.prompt.right",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/qte_prompt_right.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "qte",
+      "prompt_spec": "Forged bronze and ember-gold rightward chevron directional prompt emblem for a fantasy RPG combat timing cue, glowing warm core, crisp pixel-art edges",
+      "status": "pending"
+    },
+    {
+      "asset_id": "qte.prompt.tap",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/qte_prompt_tap.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "qte",
+      "prompt_spec": "Radiant starburst dragon-seal tap emblem framed by a beveled gold ring for a fantasy RPG combat action cue, crisp 16-bit pixel art UI medallion",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "qte.ring.pulse",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/ui/qte_ring_pulse.png",
+      "resolution": {
+        "width": 512,
+        "height": 128
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 1,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 12,
+      "loop": true,
+      "alpha_channel": true,
+      "category": "qte",
+      "animation_states": [
+        {
+          "name": "pulse",
+          "row": 0,
+          "from": 0,
+          "count": 4
+        }
+      ],
+      "prompt_spec": "Concentric contracting amber timing halo ring etched with subtle arcane tick marks, four-frame closing ring sequence for fantasy RPG QTE timing feedback",
+      "status": "pending"
+    },
+    {
+      "asset_id": "qte.burst.perfect",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/qte_burst_perfect.png",
+      "resolution": {
+        "width": 512,
+        "height": 128
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 1,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 14,
+      "loop": false,
+      "alpha_channel": true,
+      "category": "qte",
+      "animation_states": [
+        {
+          "name": "burst",
+          "row": 0,
+          "from": 0,
+          "count": 4
+        }
+      ],
+      "prompt_spec": "Crisp golden-crimson radial spark flare bursting outward from center across four sequential animation frames, 16-bit fantasy RPG perfect-hit flash effect",
+      "status": "pending"
+    },
+    {
+      "asset_id": "fx.reaction.steam_burst",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/fx_reaction_steam_burst.png",
+      "resolution": {
+        "width": 512,
+        "height": 128
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 1,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 12,
+      "loop": false,
+      "alpha_channel": true,
+      "category": "fx",
+      "animation_states": [
+        {
+          "name": "burst",
+          "row": 0,
+          "from": 0,
+          "count": 4
+        }
+      ],
+      "prompt_spec": "Explosive pressurized white-cyan vapor eruption with glowing ember sparks dispersing radially across four frames, original 16-bit fantasy battle FX",
+      "status": "delivered"
+    },
+    {
+      "asset_id": "fx.reaction.arc_discharge",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/fx_reaction_arc_discharge.png",
+      "resolution": {
+        "width": 512,
+        "height": 128
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 1,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 14,
+      "loop": false,
+      "alpha_channel": true,
+      "category": "fx",
+      "animation_states": [
+        {
+          "name": "burst",
+          "row": 0,
+          "from": 0,
+          "count": 4
+        }
+      ],
+      "prompt_spec": "High-voltage azure and gold jagged chain-lightning detonation exploding from a central impact node across four frames, 16-bit fantasy RPG battle FX",
+      "status": "pending"
+    },
+    {
+      "asset_id": "fx.reaction.frost_shatter",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/fx_reaction_frost_shatter.png",
+      "resolution": {
+        "width": 512,
+        "height": 128
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 1,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 12,
+      "loop": false,
+      "alpha_channel": true,
+      "category": "fx",
+      "animation_states": [
+        {
+          "name": "burst",
+          "row": 0,
+          "from": 0,
+          "count": 4
+        }
+      ],
+      "prompt_spec": "Sharp translucent sapphire ice crystal bloom shattering into glittering frost splinters across four animation frames, 16-bit fantasy RPG battle FX",
+      "status": "pending"
+    },
+    {
+      "asset_id": "fx.reaction.ash_veil",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/fx_reaction_ash_veil.png",
+      "resolution": {
+        "width": 512,
+        "height": 128
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 1,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 10,
+      "loop": false,
+      "alpha_channel": true,
+      "category": "fx",
+      "animation_states": [
+        {
+          "name": "burst",
+          "row": 0,
+          "from": 0,
+          "count": 4
+        }
+      ],
+      "prompt_spec": "Swirling dark soot cloud pierced by spiraling orange embers blooming outward over four animation frames, original 16-bit fantasy RPG battle FX",
+      "status": "pending"
+    },
+    {
+      "asset_id": "fx.dragon.finisher.cinder",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/fx_dragon_finisher_cinder.png",
+      "resolution": {
+        "width": 512,
+        "height": 256
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 12,
+      "loop": false,
+      "alpha_channel": true,
+      "category": "fx",
+      "animation_states": [
+        {
+          "name": "cast",
+          "row": 0,
+          "from": 0,
+          "count": 8
+        }
+      ],
+      "prompt_spec": "Torrential crimson-orange draconic firestorm vortex swirling into a molten magma flare across eight sequential frames in a 4x2 grid, 16-bit fantasy RPG FX",
+      "status": "pending"
+    },
+    {
+      "asset_id": "fx.dragon.finisher.rime",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/fx_dragon_finisher_rime.png",
+      "resolution": {
+        "width": 512,
+        "height": 256
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 12,
+      "loop": false,
+      "alpha_channel": true,
+      "category": "fx",
+      "animation_states": [
+        {
+          "name": "cast",
+          "row": 0,
+          "from": 0,
+          "count": 8
+        }
+      ],
+      "prompt_spec": "Glacial cyan-white draconic breath cyclone erupting into towering crystal spires across eight sequential frames in a 4x2 grid, 16-bit fantasy RPG FX",
+      "status": "pending"
+    },
+    {
+      "asset_id": "fx.dragon.finisher.storm",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/fx_dragon_finisher_storm.png",
+      "resolution": {
+        "width": 512,
+        "height": 256
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 14,
+      "loop": false,
+      "alpha_channel": true,
+      "category": "fx",
+      "animation_states": [
+        {
+          "name": "cast",
+          "row": 0,
+          "from": 0,
+          "count": 8
+        }
+      ],
+      "prompt_spec": "Tempest-violet and bright-gold draconic thunderstrike column descending with shockwave arcs across eight sequential frames in a 4x2 grid, 16-bit fantasy RPG FX",
+      "status": "pending"
+    },
+    {
+      "asset_id": "fx.dragon.finisher.sovereign",
+      "type": "spritesheet",
+      "target_path": "public/assets/generated/fx/fx_dragon_finisher_sovereign.png",
+      "resolution": {
+        "width": 512,
+        "height": 256
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "frame_width": 128,
+        "frame_height": 128
+      },
+      "fps": 14,
+      "loop": false,
+      "alpha_channel": true,
+      "category": "fx",
+      "animation_states": [
+        {
+          "name": "cast",
+          "row": 0,
+          "from": 0,
+          "count": 8
+        }
+      ],
+      "prompt_spec": "Radiant white-gold solar crown ignition expanding into a ringed celestial flame nova across eight sequential frames in a 4x2 grid, 16-bit fantasy RPG FX",
+      "status": "pending"
+    },
+    {
+      "asset_id": "hud.stamina.crest",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/hud_stamina_crest.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "hud",
+      "prompt_spec": "Compact 16-bit fantasy RPG HUD medallion depicting a winged boot and wind ribbon in brushed brass and emerald enamel",
+      "status": "pending"
+    },
+    {
+      "asset_id": "hud.waypoint.beacon",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/hud_waypoint_beacon.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "hud",
+      "prompt_spec": "Ornamental frontier stone brazier beacon glowing with steady amber fire inside a brass compass bezel, crisp 16-bit fantasy RPG fast-travel map icon",
+      "status": "pending"
+    },
+    {
+      "asset_id": "hud.mount.call_horn",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/hud_mount_call_horn.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "hud",
+      "prompt_spec": "Carved bone and copper war-horn wrapped in leather cord on a circular slate-iron HUD badge, crisp 16-bit fantasy RPG action icon",
+      "status": "pending"
+    },
+    {
+      "asset_id": "hud.sync.emblem",
+      "type": "icon",
+      "target_path": "public/assets/generated/ui/hud_sync_emblem.png",
+      "resolution": {
+        "width": 128,
+        "height": 128
+      },
+      "alpha_channel": true,
+      "category": "hud",
+      "prompt_spec": "Twin intertwined flame-and-ash rings around an incandescent diamond core, crisp 16-bit fantasy RPG combat Sync meter emblem",
+      "status": "pending"
+    }
+  ]
+}

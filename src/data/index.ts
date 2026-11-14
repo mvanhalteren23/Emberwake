@@ -1,3 +1,4 @@
+import { assetRequests } from '@/assets/manifests';
 import type { GameDatabase, WorldMapDef } from '@/types/contracts';
 import { acts } from './acts';
 import { chapters, merge, mergeRecord } from './campaign';
@@ -63,6 +64,7 @@ const database: GameDatabase = {
   storyGraph,
   clues,
   endings,
+  assetRequests,
   world,
   township,
   species: { ...species, ...mergeRecord((c) => c.species) },
