@@ -1,10 +1,14 @@
 import type { AssetManifest, AssetManifestEntry } from '@/types/contracts';
+import { characterAssetRequests } from './characters';
+import { environmentAssetRequests } from './environment';
 import { fxAssetRequests } from './fx';
 import { hazardAssetRequests } from './hazards';
 import { hudAssetRequests } from './hud';
 import { mountAssetRequests } from './mounts';
 import { qteAssetRequests } from './qte';
 
+export { characterAssetRequests } from './characters';
+export { environmentAssetRequests } from './environment';
 export { fxAssetRequests } from './fx';
 export { hazardAssetRequests } from './hazards';
 export { hudAssetRequests } from './hud';
@@ -18,6 +22,8 @@ export const assetRequests: readonly AssetManifestEntry[] = [
   ...qteAssetRequests,
   ...fxAssetRequests,
   ...hudAssetRequests,
+  ...characterAssetRequests,
+  ...environmentAssetRequests,
 ];
 
 /** Builds the serialized `AssetManifest` envelope expected in `shared_pipeline/manifests/pending_assets.json`. */

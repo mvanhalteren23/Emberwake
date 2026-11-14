@@ -85,6 +85,14 @@ class GeminiAssetOrchestrator:
     def enrich_prompt(self, asset: dict) -> str:
         """Agent 1: Enriches Claude's raw prompt_spec with grid & aesthetic constraints."""
         base_prompt = asset.get("prompt_spec", "")
+        if not asset.get("alpha_channel", True):
+            return (
+                f"{base_prompt}. "
+                "16-bit JRPG HD-2D remaster aesthetic, Emberwake original warm ember-lit "
+                "pixel diorama color palette, crisp pixel-art surface details, full-bleed "
+                "opaque texture filling the entire canvas edge-to-edge with no border."
+            )
+
         grid = asset.get("grid", {"columns": 1, "rows": 1})
         cols, rows = grid.get("columns", 1), grid.get("rows", 1)
         total_frames = cols * rows
@@ -141,7 +149,8 @@ class GeminiAssetOrchestrator:
                 )
                 break
             except genai_errors.APIError as exc:
-                is_hard_cap = "exceeded its monthly spending cap" in str(exc).lower()
+                msg_lower = str(exc).lower()
+                is_hard_cap = "monthly spending cap" in msg_lower or "project spend cap" in msg_lower
                 if getattr(exc, "code", None) in (429, 503) and not is_hard_cap and attempt < len(retry_delays):
                     wait_s = retry_delays[attempt]
                     logging.warning(
@@ -216,6 +225,43 @@ class GeminiAssetOrchestrator:
 
         return remove(rgba, session=session)
 
+    @staticmethod
+    def _polish_alpha_sheet(img: Image.Image, asset: dict) -> Image.Image:
+        """Removes residual interior magenta pixels and thin cell-boundary divider lines."""
+        arr = np.asarray(img.convert("RGBA"), dtype=np.float32).copy()
+        rgb = arr[:, :, :3]
+        alpha = arr[:, :, 3]
+
+        mag = np.minimum(rgb[:, :, 0], rgb[:, :, 2]) - rgb[:, :, 1]
+        is_magenta = (mag > 48.0) & (rgb[:, :, 0] > 110.0) & (rgb[:, :, 2] > 110.0)
+        alpha = np.where(is_magenta, 0.0, alpha)
+
+        fringe = (alpha > 0.0) & (mag > 22.0) & (rgb[:, :, 0] > 90.0) & (rgb[:, :, 2] > 90.0)
+        arr[:, :, 0] = np.where(fringe, np.minimum(arr[:, :, 0], arr[:, :, 1] + 20.0), arr[:, :, 0])
+        arr[:, :, 2] = np.where(fringe, np.minimum(arr[:, :, 2], arr[:, :, 1] + 20.0), arr[:, :, 2])
+
+        grid = asset.get("grid")
+        if grid:
+            cols = int(grid.get("columns", 1))
+            rows = int(grid.get("rows", 1))
+            fw = int(grid.get("frame_width", img.width))
+            fh = int(grid.get("frame_height", img.height))
+            for c in range(1, cols):
+                x = c * fw
+                for dx in (-1, 0, 1):
+                    xi = x + dx
+                    if 0 <= xi < arr.shape[1] and np.mean(alpha[:, xi] > 128) > 0.50:
+                        alpha[:, xi] = 0.0
+            for r in range(1, rows):
+                y = r * fh
+                for dy in (-1, 0, 1):
+                    yi = y + dy
+                    if 0 <= yi < arr.shape[0] and np.mean(alpha[yi, :] > 128) > 0.50:
+                        alpha[yi, :] = 0.0
+
+        arr[:, :, 3] = alpha
+        return Image.fromarray(np.clip(arr, 0.0, 255.0).astype(np.uint8))
+
     def post_process_and_pack(self, raw_img: Image.Image, asset: dict) -> Path:
         """Agent 3: Strips background, enforces exact pixel dimensions, and exports atlas JSON."""
         target_path = Path(asset["target_path"])
@@ -235,6 +281,10 @@ class GeminiAssetOrchestrator:
             processed_img = processed_img.resize(
                 (target_w, target_h), Image.Resampling.NEAREST
             )
+
+        # 2b. Clean residual interior magenta pixels and thin cell-divider lines
+        if asset.get("alpha_channel", True):
+            processed_img = self._polish_alpha_sheet(processed_img, asset)
 
         # 3. Save optimized WebP/PNG asset
         ext = target_path.suffix.lower()

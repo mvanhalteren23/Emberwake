@@ -1,0 +1,193 @@
+import type { AssetManifestEntry } from '@/types/contracts';
+
+const HERO_ANIM_STATES = [
+  { name: 'idle', row: 0, from: 0, count: 1 },
+  { name: 'walk', row: 0, from: 1, count: 1 },
+  { name: 'action', row: 0, from: 2, count: 1 },
+  { name: 'special', row: 0, from: 3, count: 1 },
+] as const;
+
+/**
+ * Character, companion, enemy, boss, dragon-form, and townsfolk sprite-sheet
+ * asset requests generated via the shared HD-2D Gemini asset pipeline.
+ */
+export const characterAssetRequests: readonly AssetManifestEntry[] = [
+  {
+    asset_id: 'hero.kael.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/hero_kael_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 8,
+    loop: true,
+    alpha_channel: true,
+    animation_states: HERO_ANIM_STATES,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art character sprite sheet for Kael, Last of the Ashen Drake. Young warrior with cobalt-blue tousled hair (#3b5fa8), small golden drake horns on his brow (#f2c14e), crimson tunic (#c9463a), dark burgundy travel cloak (#7a2230), dark slate boots, wielding an ember-runed broadsword. 4 horizontal frames in a single row: frame 1 ready idle stance, frame 2 striding walk, frame 3 swinging a fiery Cinder Slash sword arc, frame 4 channeling golden-orange drake flame. Crisp dark pixel outlines, rich hand-pixelled shading, full body visible inside each 64x64 frame.',
+    status: 'pending',
+  },
+  {
+    asset_id: 'hero.tobin.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/hero_tobin_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 8,
+    loop: true,
+    alpha_channel: true,
+    animation_states: HERO_ANIM_STATES,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art character sprite sheet for Tobin Marsh, Frontier Warden of Lanternwick. Ranger with chestnut hair (#6b4a2b), forest-green hooded ranger cloak (#35593a), woodland tunic (#4f7f4a), leather bracers and boots (#5a4634) with brass trim (#d9c27a), wielding a carved ash longbow. 4 horizontal frames in a single row: frame 1 alert ranger idle stance, frame 2 scouting walk stride, frame 3 drawing a glowing green wind-fletched arrow at full draw, frame 4 loosing a high-angle Wind Volley arrow. Crisp dark pixel outlines, full body visible inside each 64x64 frame.',
+    status: 'pending',
+  },
+  {
+    asset_id: 'hero.vesna.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/hero_vesna_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 8,
+    loop: true,
+    alpha_channel: true,
+    animation_states: HERO_ANIM_STATES,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art character sprite sheet for Vesna, undefeated gladiator of the Saltmarket arena. Athletic female warrior with long flowing copper-orange hair (#e07b39), golden headband (#f0d264), deep violet arena tunic (#7d4fa0) with gold trim, dark greaves, wielding a long polearm glaive with a glowing cinder blade. 4 horizontal frames in a single row: frame 1 poised arena idle stance, frame 2 agile dash step, frame 3 sweeping crimson Glaive Arc slash, frame 4 defensive Riposte parry stance. Crisp dark pixel outlines, expressive pixel shading, full body visible inside each 64x64 frame.',
+    status: 'pending',
+  },
+  {
+    asset_id: 'hero.orla.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/hero_orla_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 8,
+    loop: true,
+    alpha_channel: true,
+    animation_states: HERO_ANIM_STATES,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art character sprite sheet for Orla, Wind-Chanter of Galecrest. Graceful cantor with long pale blond hair (#f3e9c6), silver wind-crest circlet, sky-blue liturgical robe (#5aa7c9) with cream hem (#e8e2d2), billowing white sail-cloak (#dfe9f2), wielding awind-chime staff. 4 horizontal frames in a single row: frame 1 serene idle stance, frame 2 gliding walk step, frame 3 raising her chime-staff with swirling cyan wind ribbons, frame 4 spreading her sail-cloak on an updraft. Crisp dark pixel outlines, full body visible inside each 64x64 frame.',
+    status: 'pending',
+  },
+  {
+    asset_id: 'hero.hadrik.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/hero_hadrik_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 8,
+    loop: true,
+    alpha_channel: true,
+    animation_states: HERO_ANIM_STATES,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art character sprite sheet for Hadrik, Quarry-Shield stonecutter. Broad-shouldered stout warrior with cropped dark hair and beard (#3a3a3a), weathered slate-grey quarry armor (#8d8f96) with copper-orange straps (#c96a3a), heavy iron boots (#4b4d57), wielding a massive two-handed stonebreaker maulhammer. 4 horizontal frames in a single row: frame 1 grounded idle stance resting maul on shoulder, frame 2 heavy march stride, frame 3 overhead Quake Hammer slam with flying rock chips, frame 4 braced Bastion Call guard stance. Crisp dark pixel outlines, full body visible inside each 64x64 frame.',
+    status: 'pending',
+  },
+  {
+    asset_id: 'hero.pim.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/hero_pim_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 8,
+    loop: true,
+    alpha_channel: true,
+    animation_states: HERO_ANIM_STATES,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art character sprite sheet for Pim, Spring-Wound Tinker of the Mirefast stilts. Energetic petite artificer with lime-tinted hair (#9bd16a) under a tinker cap with brass goggles, warm amber work tunic (#e0a23a), plum breeches (#6a5a8a), coral scarf (#f25f5c), brass coiled spring-boots, wielding a brass clockwork repeating crossbow. 4 horizontal frames in a single row: frame 1 bouncy idle stance, frame 2 spring-heeled stride, frame 3 firing a Gale Bolt from her clockwork crossbow, frame 4 mid-air spring-boot leap with spinning brass gears. Crisp dark pixel outlines, full body visible inside each 64x64 frame.',
+    status: 'pending',
+  },
+  {
+    asset_id: 'hero.quill.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/hero_quill_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 8,
+    loop: true,
+    alpha_channel: true,
+    animation_states: HERO_ANIM_STATES,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art character sprite sheet for Quill, Apostate Archivist of Saffrane. Poised scholar-mage with dark ink-black hair (#22252e), wide-brimmed archivist hat, midnight-indigo robes (#2f3d5c) with pale cyan-silver trim (#9ad1d4) and dark cape (#1c2740), holding an open illuminated ledger tome and a radiant lumen staff. 4 horizontal frames in a single row: frame 1 reading ledger idle pose, frame 2 brisk robe walk, frame 3 casting a golden-white Lumen Lance beam from her staff, frame 4 unsealing a floating rune circle of parchment pages. Crisp dark pixel outlines, full body visible inside each 64x64 frame.',
+    status: 'pending',
+  },
+  {
+    asset_id: 'hero.moss.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/hero_moss_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 8,
+    loop: true,
+    alpha_channel: true,
+    animation_states: HERO_ANIM_STATES,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art character sprite sheet for Moss, Hedge-Druid of Hollowroot. Wise sylvan druid with mossy green skin (#8fae7a), long fern-green hair (#4d6b3a), wooden antler-branch crest (#d7e08a), woven bark-and-leaf tunic (#6e5a3e), root-wrapped staff. 4 horizontal frames in a single row: frame 1 tranquil forest idle stance, frame 2 unhurried stride, frame 3 lashing out with a glowing emerald Thorn Lash vine whip, frame 4 communing with blooming golden-green moss flowers around his feet. Crisp dark pixel outlines, full body visible inside each 64x64 frame.',
+    status: 'pending',
+  },
+  {
+    asset_id: 'hero.sable.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/hero_sable_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 8,
+    loop: true,
+    alpha_channel: true,
+    animation_states: HERO_ANIM_STATES,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art character sprite sheet for Sable, Lantern-Thief. Agile rogue with silver-white hair (#f0f0f5) under a dark obsidian-plum hood and cloak (#2a2230), crimson sash accent (#b0364f), wielding twin curved shadow daggers and a spirit-lantern grapple hook. 4 horizontal frames in a single row: frame 1 crouched stealth idle stance, frame 2 swift shadow-step dash, frame 3 twin-dagger Night Cut cross slash with violet trail, frame 4 firing her glowing spirit-lantern grapple line upward. Crisp dark pixel outlines, full body visible inside each 64x64 frame.',
+    status: 'pending',
+  },
+  {
+    asset_id: 'char.enemies.frontier.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/char_enemies_frontier_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 6,
+    loop: true,
+    alpha_channel: true,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art RPG character lineup sheet with 4 distinct characters in a single horizontal row (1 row of 4 cells): cell 1 is a snarling Thornback Wolf beast with thorny bramble spines along its dark fur back; cell 2 is a hooded Covenant Acolyte in ivory-and-ash robes (#e9e4d4) holding a pale blue lantern censer; cell 3 is Boss Deacon Vash of the Still Flame in ornate ivory-and-gold inquisitor vestments casting cold cyan flame (#8fd0e8); cell 4 is the Ashen Drake dragon form, a winged charcoal-and-ember wyrm with glowing molten chest scales. Each character centered cleanly inside its own 64x64 cell with crisp dark pixel outlines.',
+    status: 'pending',
+  },
+  {
+    asset_id: 'char.enemies.arena_coast.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/char_enemies_arena_coast_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 6,
+    loop: true,
+    alpha_channel: true,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art RPG enemy lineup sheet with 4 distinct enemies in a single horizontal row (1 row of 4 cells): cell 1 is a Stilled Wisp, an eerie floating frost-blue spectral lantern spirit wreathed in pale mist; cell 2 is a Shoreclaw, a heavy barnacle-crusted coastal rock crab with crushing coral pincers; cell 3 is Wagon-Captain Ferris, a burly armored Covenant captain in steel breastplate and ivory tabard wielding a halberd; cell 4 is Halvard the Unbowed, Champion of the Cinder Ring arena in bronze gladiator pauldrons wielding a twin-bladed fire cleaver. Each character centered cleanly inside its own 64x64 cell with crisp dark pixel outlines.',
+    status: 'pending',
+  },
+  {
+    asset_id: 'char.dragon_forms.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/char_dragon_forms_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 6,
+    loop: true,
+    alpha_channel: true,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art dragon transformation lineup sheet with 4 distinct draconic forms in a single horizontal row (1 row of 4 cells): cell 1 is Ember Whelp, a compact fiery orange-and-charcoal hatchling drake with glowing ember crest; cell 2 is Rimehorn Wyrm, a crystalline frost-blue ice wyrm with glacier horns and freezing mist; cell 3 is Thunderhide Drake, a sleek storm-indigo winged drake crackling with golden lightning arcs; cell 4 is Sovereign of the Banked Flame, an apex royal crimson-and-gold four-winged ancient dragon wreathed in solar fire. Each dragon centered cleanly inside its own 64x64 cell with crisp dark pixel outlines.',
+    status: 'pending',
+  },
+  {
+    asset_id: 'char.npcs.townsfolk.sheet',
+    type: 'spritesheet',
+    target_path: 'public/assets/generated/characters/char_npcs_townsfolk_sheet.png',
+    resolution: { width: 256, height: 64 },
+    grid: { columns: 4, rows: 1, frame_width: 64, frame_height: 64 },
+    fps: 6,
+    loop: true,
+    alpha_channel: true,
+    prompt_spec:
+      'HD-2D 32-bit pixel-art fantasy townsfolk NPC lineup sheet with 4 distinct characters in a single horizontal row (1 row of 4 cells): cell 1 is Elder Maren, dignified silver-haired Reeve of Lanternwick in warm russet wool mantle holding a town ledger staff; cell 2 is Bram the Carpenter in leather tool apron carrying a timber saw and hewn oak beam; cell 3 is Gilda the Blacksmith, muscular forge-mistress with soot-streaked leather apron and glowing smithing tongs; cell 4 is Drava, flamboyant Ringmaster of the Cinder Ring in crimson-and-gold coat holding a brass announcer horn. Each NPC centered cleanly inside its own 64x64 cell with crisp dark pixel outlines.',
+    status: 'pending',
+  },
+];
